@@ -1,12 +1,7 @@
 package com.venu.cache;
 
 public class CacheTest {
-	 
-	/**
-	 * @author Crunchify.com
-	 */
 
-	 
 	    public static void main(String[] args) throws InterruptedException {
 	 
 	    	CacheTest crunchifyCache = new CacheTest();
@@ -14,10 +9,10 @@ public class CacheTest {
 	        System.out.println("\n\n==========Test1: crunchifyTestAddRemoveObjects ==========");
 	        crunchifyCache.testAddRemoveObjects();
 	        System.out.println("\n\n==========Test2: crunchifyTestExpiredCacheObjects ==========");
-	        crunchifyCache.crunchifyTestExpiredCacheObjects();
+	        crunchifyCache.testExpiredCacheObjects();
 	        /*
 	        System.out.println("\n\n==========Test3: crunchifyTestObjectsCleanupTime ==========");
-	        crunchifyCache.crunchifyTestObjectsCleanupTime();
+	        crunchifyCache.testObjectsCleanupTime();
 	        */
 	    }
 	 
@@ -52,7 +47,7 @@ public class CacheTest {
 	 
 	    }
 	 
-	    private void crunchifyTestExpiredCacheObjects() throws InterruptedException {
+	    private void testExpiredCacheObjects() throws InterruptedException {
 	 
 	        // Test with timeToLiveInSeconds = 1 second
 	        // timerIntervalInSeconds = 1 second
@@ -95,7 +90,7 @@ public class CacheTest {
 	 
 	    }
 	 
-	    private void crunchifyTestObjectsCleanupTime() throws InterruptedException {
+	    private void testObjectsCleanupTime() throws InterruptedException {
 	        int size = 500000;
 	 
 	        // Test with timeToLiveInSeconds = 100 seconds
