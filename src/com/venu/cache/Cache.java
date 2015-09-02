@@ -9,11 +9,7 @@ import org.apache.commons.collections.MapIterator;
 	import org.apache.commons.collections.map.LRUMap;
 	
 public class Cache<K, T> {
- 
-	/**
-	 * @author Crunchify.com
-	 */
-	 
+
 	    private long timeToLive;
 	    private LRUMap cacheMap;
 	 
